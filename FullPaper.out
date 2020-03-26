@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Literature Review}{}% 2
+\BOOKMARK [1][-]{section.3}{Static heterogeneous electric vehicle routing problem under uncertainties}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Problem description}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Mathematical model}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Solution approach}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Stage 1: sample sets design}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Stage 2: set of scenarios generation}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Stage 3: pool of solutions creation}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Stage 4: route plan selection}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Stage 5: solution pool revision}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Dataset design}{}% 12
+\BOOKMARK [1][-]{section.6}{Cases configuration}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Scenarios based on charging strategy at construction of initial route plan}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Scenarios based on charging station availability}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.3}{Scenarios based on initial setup}{section.6}% 16
+\BOOKMARK [1][-]{section.7}{Computational results}{}% 17
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 18

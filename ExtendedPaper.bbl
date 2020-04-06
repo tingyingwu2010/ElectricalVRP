@@ -1,0 +1,148 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bent and Hentenryck(2004)]{Bent2004}
+R.~Bent and P.~V. Hentenryck.
+\newblock Scenario-based planning for partially dynamic vehicle routing with
+  stochastic customers.
+\newblock \emph{Operations Research}, 52\penalty0 (6):\penalty0 977--987, 2004.
+\newblock \doi{10.1287/opre.1040.0124}.
+
+\bibitem[Bi and Tang(2019)]{Bi2019}
+X.~Bi and W.~K.~S. Tang.
+\newblock Logistical planning for electric vehicles under time-dependent
+  stochastic traffic.
+\newblock \emph{IEEE Transaction on Intelligent Transportation System},
+  20\penalty0 (10):\penalty0 3771--3781, 2019.
+\newblock \doi{10.1109/TITS.2018.2883791}.
+
+\bibitem[Felipe et~al.(2014)Felipe, Ortu\~{n}o, Righini, and
+  Tirado]{Felipe2014}
+A.~Felipe, M.~T. Ortu\~{n}o, G.~Righini, and G.~Tirado.
+\newblock A heuristic approach for the green vehicle routing problem with
+  multiple technologies and partial recharges.
+\newblock \emph{Transportation Research Part E: Logistics and Transportation
+  Review}, 71:\penalty0 111--128, 2014.
+\newblock \doi{https://doi.org/10.1016/j.tre.2014.09.003}.
+
+\bibitem[Hansen et~al.(1997)Hansen, Mladenovi{\'{c}}, Brimberg, and {Moreno
+  P{\'{e}}rez}]{Hansen1997}
+P.~Hansen, N.~Mladenovi{\'{c}}, J.~Brimberg, and J.~A.~M. {Moreno P{\'{e}}rez}.
+\newblock Variable neighborhood search.
+\newblock In M.~Gendreau and J.~Potvin, editors, \emph{Handbook of
+  Metaheuristics}, chapter~3, pages 61--87. Springer, 2 edition, 1997.
+
+\bibitem[Hiermann et~al.(2016)Hiermann, Puchinger, Ropke, and
+  Hartl]{Hiermann2016}
+G.~Hiermann, J.~Puchinger, S.~Ropke, and R.~F. Hartl.
+\newblock The electric fleet size and mix vehicle routing problem with time
+  windows and recharging stations.
+\newblock \emph{European Journal of Operational Research}, 252\penalty0
+  (3):\penalty0 995--1018, 2016.
+\newblock \doi{10.1016/j.ejor.2016.01.038}.
+
+\bibitem[Liu and Shen(1999)]{Liu1999}
+F.~H. Liu and S.~Y. Shen.
+\newblock The fleet size and mix vehicle routing problem with time windows.
+\newblock \emph{Journal of the Operational Research Society}, 50\penalty0
+  (7):\penalty0 721--732, 1999.
+\newblock \doi{10.1057/palgrave.jors.2600763}.
+
+\bibitem[Lu and Wang(2019)]{Lu2019}
+J.~Lu and L.~Wang.
+\newblock A bi-strategy based optimization algorithm for the dynamic
+  capacitated electric vehicle routing problem.
+\newblock In \emph{Proceedings of the IEEE Congress on Evolutionary
+  Computation}, New Zealand, 2019.
+\newblock \doi{10.1109/CEC.2019.8789982}.
+
+\bibitem[Mladenovi{\'{c}} and Hansen(1997)]{Mladenovic1997}
+N.~Mladenovi{\'{c}} and P.~Hansen.
+\newblock {Variable neighbourhood search}.
+\newblock \emph{Computers \& Operations Research}, 24\penalty0 (11):\penalty0
+  1097--1100, 1997.
+
+\bibitem[Montoya et~al.(2017)Montoya, Gu\'{e}ret, Mendoza, and
+  Villegas]{Montoya2017}
+A.~Montoya, C.~Gu\'{e}ret, J.~E. Mendoza, and J.~G. Villegas.
+\newblock The electric vehicle routing problem with nonlinear charging
+  function.
+\newblock \emph{Transportation Research Part B: Methodological}, 103:\penalty0
+  87--110, 2017.
+\newblock \doi{10.1016/j.trb.2017.02.004}.
+
+\bibitem[{NSR Compilation report}(2013)]{mobility2013}
+{NSR Compilation report}.
+\newblock Comparative analysis of european examples of schemes for freight
+  electric vehicles.
+\newblock
+  \url{http://e-mobility-nsr.eu/fileadmin/user_upload/downloads/info-pool/E-Mobility_-_Final_report_7.3.pdf},
+  2013.
+\newblock Accessed: 11-24-2019.
+
+\bibitem[Pelletier et~al.(2019)Pelletier, Jabali, and Laporte]{Pelletier2019}
+S.~Pelletier, O.~Jabali, and G.~Laporte.
+\newblock The electric vehicle routing problem with energy consumption
+  uncertainty.
+\newblock \emph{Transportation Research Part B: Methodological}, 126:\penalty0
+  225--255, 2019.
+\newblock \doi{10.1016/j.trb.2019.06.006}.
+
+\bibitem[Penna et~al.(2016)Penna, Afsar, Prins, and Prodhon]{Penha2016}
+P.~H.~V. Penna, H.~M. Afsar, C.~Prins, and C.~Prodhon.
+\newblock A hybrid iterative local search algorithm for the electric fleet size
+  and mix vehicle routing problem with time windows and recharging stations.
+\newblock \emph{IFAC-PapersOnLine}, 49\penalty0 (12):\penalty0 955--960, 2016.
+\newblock \doi{10.1016/j.ifacol.2016.07.899}.
+
+\bibitem[Schneider et~al.(2014)Schneider, A., and Goeke]{Schneider2014}
+M.~Schneider, Stenger A., and D.~Goeke.
+\newblock The electric vehicle-routing problem with time windows and recharging
+  stations.
+\newblock \emph{Transportation Research Part B: Methodological}, 48:\penalty0
+  465--694, 2014.
+\newblock \doi{10.1287/trsc.2013.0490}.
+
+\bibitem[Shao et~al.(2017)Shao, Guan, Ran, He, and Bi]{Shao2017}
+S.~Shao, W.~Guan, B.~Ran, Z.~He, and J.~Bi.
+\newblock Electric vehicle routing problem with charging time and variable
+  travel time.
+\newblock \emph{Mathematical Problems in Engineering}, pages 1--13, 2017.
+\newblock \doi{10.1155/2017/5098183}.
+
+\bibitem[Shi et~al.(2019)Shi, Gao, Wang, Yu, and Ioannou]{Shi2019}
+j.~Shi, Y.~Gao, W.~Wang, N.~Yu, and P.~Ioannou.
+\newblock Operating electric vehicle fleet for ride-hailing services with
+  reinforcement learning.
+\newblock \emph{IEEE Transactions on Intelligent Transportation Systems}, pages
+  1--13, 2019.
+\newblock \doi{10.1109/TITS.2019.2947408}.
+
+\bibitem[Solomon(1987)]{Solomon1987}
+M.~Solomon.
+\newblock Algorithms for the vehicle routing and scheduling problems with time
+  windows.
+\newblock \emph{Operations Research}, 35\penalty0 (2):\penalty0 254--65, 1987.
+\newblock \doi{10.1287/opre.35.2.254}.
+
+\bibitem[Sweda et~al.(2017)Sweda, Dolinskaya, and Klabjan]{Sweda2017}
+T.~M. Sweda, I.~S. Dolinskaya, and D.~Klabjan.
+\newblock Adaptive routing and recharging policies for electric vehicles.
+\newblock \emph{Transportation Science}, 51\penalty0 (4):\penalty0 1031--1386,
+  2017.
+\newblock \doi{10.1287/trsc.2016.0724}.
+
+\bibitem[Taillard et~al.(1997)Taillard, Badeau, Gendreau, Guertin, and
+  Potvin]{Taillard1997}
+E.~Taillard, P.~Badeau, M.~Gendreau, F.~Guertin, and J.~Potvin.
+\newblock A tabu search heuristic for the vehicle routing problem with soft
+  time windows.
+\newblock \emph{Transportation Science}, 31\penalty0 (2):\penalty0 101--195,
+  1997.
+\newblock \doi{10.1287/trsc.31.2.170}.
+
+\end{thebibliography}

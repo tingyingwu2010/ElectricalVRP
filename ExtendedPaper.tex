@@ -42,6 +42,7 @@
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DRAWINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,11 +87,24 @@
 \newcommand{\linel}{\hfill\hspace{-\textwidth}\underline{${}_{}$\hspace{\textwidth}}}
 \newcommand{\markpages}[1]{\markboth{\hspace*{0.1cm} #1 \hfill \linel}{\liner #1 \hspace*{0.1cm}}}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{marcella}{rgb}{0.0,0.0,0.0} %What Marcella has changed
+\def\marcella{\textcolor{marcella}}
+\definecolor{bobby}{rgb}{0.0,0.0,0.0} %What Bobby has changed
+\def\juergen{\textcolor{bobby}}
+\definecolor{andre}{rgb}{0.0,0.0,0.0} %What Andre has changed
+\def\hallo{\textcolor{andre}}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SETTINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \selectlanguage{american}
+\urlstyle{same}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLEPAGE
@@ -111,22 +125,20 @@
 \maketitle
 
 \begin{abstract}
-With more and more serious issues like air pollution and traffic noise in transport sector, a fast growing number of electric vehicles has been used for various purpose in road transport, including urban freight transport. To promote the usage of electric vehicle in urban freight transport, this study investigates the dynamic vehicle routing problem with consideration of heterogeneous vehicle types and mixed-type charging facilities, as well as multiple uncertain factors in real operation. It is a challenge to incorporate charging activity into the routing plan since the availability of charging station and the travel time en-route are stochastic. The decision-maker needs to assign the right vehicle type to a certain route with minimized total time to implement the routing plan. An adaptive solution approach based on multiple scenario approach and two heuristics is developed to solve the proposed model. To validate the proposed model and test the solution approach, multiple numerical experiments are conducted based on a benchmark dataset. \\
-
-\textbf{Keywords} Electric vehicle routing problem, Heterogeneous electric vehicles, Mixed-type charging, Uncertainty, Dynamic approach, Multiple scenario approach
-
+	With more and more serious issues like air pollution and traffic noise in transport sector, a fast growing number of electric vehicles has been used for various purpose in road transport, including urban freight transport. To promote the usage of electric vehicle in urban freight transport, this study investigates the dynamic vehicle routing problem with consideration of heterogeneous vehicle types and mixed-type charging facilities, as well as multiple uncertain factors in real operation. It is a challenge to incorporate charging activity into the route plan since the availability of charging station and the travel time en-route are stochastic. The decision-maker needs to assign the right vehicle type to a certain route with minimized total time to implement the routing plan. An adaptive solution approach based on multiple scenario approach and two heuristics is developed to solve the proposed model. To validate the proposed model and test the solution approach, multiple numerical experiments are conducted based on a benchmark dataset.
 \end{abstract}
+\textbf{Keywords} Electric vehicle routing problem, Heterogeneous electric vehicles, Mixed-type charging, Uncertainty, Dynamic approach, Multiple scenario approach
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Although road urban freight transport may cause various issues, such as traffic congestion, traffic noise, air pollution, energy consumption, and high logistics costs, it remains the primary mode of urban freight transport. The use of electric vehicles (EVs) has emerged as a promising solution to reducing such environmental and sustainable concerns. Its is evident that EVs operate more silently than conventional vehicles, and they could help reduce traffic emission significantly.  Nevertheless, how to run EVs efficiently and economically under various features and limitations associated with EV, for instance, limited driving range, limited load capacity, long charging time and the scarcity of charging station (CS), is a challenge to address before they can be used for freight transport widely.
+Although road urban freight transport may cause various issues, such as traffic congestion, traffic noise, air pollution, energy consumption, and high logistics costs, it remains the primary mode of urban freight transport. The use of electric vehicles (EVs) has emerged as a promising solution to reducing such environmental and sustainable concerns. Its is evident that EVs operate more silently than conventional vehicles, and they could help reduce traffic emission significantly.  Nevertheless, how to run EVs efficiently and economically under various features and limitations associated with EV, for instance, limited driving range, limited load capacity, long charging time and the scarcity of charging station (CS), is a challenge to be addressed before EVs can be used for freight transport widely.
 
-To promote the integration and operation of EVs for freight transport, several models of electric vehicle routing problem (EVRP) have been proposed during the past few years. As optimization decision models seek to represent real-life problems, research on EVRP has introduced several variants. One of them is the heterogeneous EVRP (HEVRP). Logistics companies usually hold a fleet of diverse EVs with different acquisition cost, capacity, driving range, and energy consumption. Therefore, fleet management, i.e. selecting the right EV for a certain transportation request, is highly important. In HEVRP, it is considered that EVs differ in their capacity, battery size, and purchasing cost. Another variant of the EVRP is the stochastic EVRP (SEVRP). In real life, one or more inputs of the problem are often uncertain, and the developments in the area of algorithms and the area of information technologies, e.g. development of intelligent transportation systems (ITS), have rendered possible to freight providers the use of real-time data on the management of their operations. 
+To promote the integration and operation of EVs to freight transport, several models of electric vehicle routing problem (EVRP) have been proposed during the past few years. As optimization decision models seek to represent real-life problems, research on EVRP has introduced several variants. One of them is the heterogeneous EVRP (HEVRP). Logistics companies usually hold a fleet of diverse EVs with different acquisition cost, capacity, driving range, and energy consumption. Therefore, fleet management, i.e. selecting the right EV for a certain transportation request, is highly important. In HEVRP, it is considered that EVs differ in their capacity, battery size, and purchasing cost. Another variant of the EVRP is the stochastic EVRP (SEVRP). In real life, one or more inputs of the problem are often uncertain, and the developments in the area of algorithms and the area of information technologies, e.g. development of intelligent transportation systems (ITS), have rendered possible to freight providers the use of real-time data on the management of their operations. 
 
-That is, VRP can now be solved dynamically, i.e. on real-time manner. 
+That is, VRP can now be solved dynamically, i.e. on real-time manner....
 
 
 Although a diversity of EVRP models have been proposed with consideration of various factors and constraints, several key factors associated with EVs are missing, and more importantly the relationship among various factors lacks exploration. 
@@ -142,10 +154,10 @@ The structure of the paper is as follows. In the next section, a review research
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In this work, we cover two categories of the electric vehicle routing problem. A brief description of these classes together with examples of works that have investigated them are presented as follows. 
 
-The first class is the HEVRP. Companies usally hold a fleet of diverse electric vehicles regards to, for instance, driving range. The fleet management, i.e. selecting the right EV for a certain transportation request, is highly important when the fleet of electric vehicles is heteregeneuos. This class has been proposed to represent this situation. The HEVRP may, therefore, include many types of electric vehicles which can differ in capacity, battery capacity, energy battery consumption, charge level, and fixed cost. To the best of our knowlegde only  \cite{Hiermann2016} and \cite{Penha2016} have approached the HEVRP. \cite{Hiermann2016} studied the HEVRP with capacity constraints, time windows, service times, and charging stations. In this problem, each customer has a specific demand, a duration of the service, and must be servided within its time window. It was assumed that the EVs vary in their transportation capacity, battery size, and purchaising costs. The authors proposed a mixed integer programming (MIP) formulation whose objective function minimizes not only the acquisition costs but also total traveled distance. Two solution algorithms were used to solve the model, branch \& bound (B\&B) solver and a hybrid one. The hybrid heuristic combines an adaptative large neighbourhood search (ALNS) together with a embedded local search (LS) and a labeling procedure. Since there is no benchmark dataset available for this problem, they created one based on the modified Solomon instances of \cite{Schneider2014} and the description of the vehicle type categories of \cite{Liu1999}. \cite{Hiermann2016} extended these vehicle types to include energy consumption, batery size, and recharging rate. Computational results on the benchmark dataset showed that the proposed ALNS was able to find optimal solutions for all small instances, whereas for the other instances it found solutions within small gaps to the best known solutions. They also performed a sensitivity analysis to demonstrate the benefit of considering a fleet of heterogeneous vehicles. \cite{Penha2016} investigated the very same problem but proposed a different solution approach. The proposed solution approach is a hybrid heuristic (HILS), which incorporates a Set Partitioning (SP) model to a Iterated Local Search (ILS). The performance of the proposed solution approach was evaluated on the benchmark instances created by \cite{Hiermann2016}. The numerical results indicated that the performance of the HILS was similar to the ALNS. That is to say, HILS was able to find optimal solutions for various instances and solutions with small gap to the optimal solutions. Althouth \cite{Hiermann2016} and \cite{Penha2016} considered electric vehicles with different battery energy consumption and charging rates, it was assumed in both studies that the electric vehicles are always charged to full capacity every time a vehicle reaches a charging station. 
+The first class is the HEVRP. Companies usally hold a fleet of diverse electric vehicles regards to, for instance, driving range. The fleet management, i.e. selecting the right EV for a certain transportation request, is highly important when the fleet of electric vehicles is heteregeneuos. This class of EVRP has been proposed to represent this situation. The HEVRP may, therefore, include many types of electric vehicles which can differ in capacity, battery capacity, energy battery consumption, charge level, and fixed cost. To the best of our knowlegde only  \cite{Hiermann2016} and \cite{Penha2016} have approached the HEVRP. \cite{Hiermann2016} studied the HEVRP with capacity constraints, time windows, service times, and charging stations. In this problem, each customer has a specific demand, a duration of the service, and must be servided within its time window. It was assumed that the EVs vary in their transportation capacity, battery size, and purchaising costs. The authors proposed a mixed integer programming (MIP) formulation whose objective function minimizes not only the acquisition costs but also total traveled distance. Two solution algorithms were used to solve the model, branch \& bound (B\&B) solver and a hybrid one. The hybrid heuristic combines an adaptative large neighbourhood search (ALNS) together with a embedded local search (LS) and a labeling procedure. Since there is no benchmark dataset available for this problem, they created one based on the modified Solomon instances of \cite{Schneider2014} and the description of the vehicle type categories of \cite{Liu1999}. \cite{Hiermann2016} extended these vehicle types to include energy consumption, batery size, and recharging rate. Computational results on the benchmark dataset showed that the proposed ALNS was able to find optimal solutions for all small instances, whereas for the other instances it found solutions within small gaps to the best known solutions. They also performed a sensitivity analysis to demonstrate the benefit of considering a fleet of heterogeneous vehicles. \cite{Penha2016} investigated the very same problem but proposed a different solution approach. The proposed solution approach is a hybrid heuristic (HILS), which incorporates a set partitioning (SP) model to a iterated local search (ILS). The performance of the proposed solution approach was evaluated on the benchmark instances created by \cite{Hiermann2016}. The numerical results indicated that the performance of the HILS was similar to the ALNS. That is to say, HILS was able to find optimal solutions for various instances and solutions with small gap to the optimal solutions. Althouth \cite{Hiermann2016} and \cite{Penha2016} considered electric vehicles with different battery energy consumption and charging rates, it was assumed in both studies that the electric vehicles are always charged to full capacity every time a vehicle reaches a charging station. 
 
 
-The second class is the SEVRP. In contrast to the assumptions of the classical EVRP, in the real world one or more of the elements of the EVRP are uncertain. The inputs of the EVRP that have been assumed to be stochastic are cutomer presence \citep{Shi2019}, demands \citep{Lu2019}, travel time \citep{Shao2017}, energy consumption \citep{Pelletier2019}, and charging station availability \citep{Sweda2017}. Because of the importance of the time frame in the decision-making process, the SEVRP can be examined from two perspectives: static or dynamic. From a static perspective, the goal is to calculate a robust a-priori solution that undergoes minor changes during its execution to manage the fluctuations in the uncertain inputs. From a dynamic perspective, the aim is to design a route plan in an online way reporting to every vehicle what to do next. For this reason, the SEVRP can be classified either as static and stochastic EVRP (SSEVRP) or dynamic and stochastic EVRP (DSEVRP). In the SSEVRP decisions are made at the planning phase and define actions which are implement at the execution phase, whereas in the  DSEVRP decisions are made as soon as a new event occurs. In the latter, route plans are reoptimized at predefined stages with respect to both the current condition of the system and the available stochastic information. To the best of our knowlegde only \cite{Bi2019} and \cite{Lu2019} have investigated the stochastic EVRP from a dynamic perspective. \cite{Bi2019} considered the dynamic electric vehicle routing problem with battery charging and discharging and stochastic travel time and stochastic demands. The authors considered a single EV and designed a markov decision process (MDP) model which incorporates an analytical battery model to better capture the discharging and charging pattern of the EVs. To solve this model, a hybrid rollout algorithm (HRA) which combines a pre-planning strategy and a rollout algorithm was developed. They used data of a logistics company in Singapore and the charging network of the country to generate several intances of the DSEVRP. The historical traffic data necessary in the   pre-planning strategy in collect via Google Map Distance Matrix API. While the performance of the HRA was compared with that of an hybrid policy iteration (HPI) and hybrid base heuristic (HBH), the performance of the analytical battery model was compared to a linear approximation (LP) model. HRA calculated solutions that were little worse than HPI and HBH solutions in all small instances but it outperformed than in large instances. The simulation results also indicated that the analytical model outperformed the LP model. \cite{Lu2019} approached the dynamic capacitated electric vehicle routing problem (DCEVRP) with stochastic customers and stochastic demands by transforming the problem into a series of static problems. For solving the series of static problems, they introduced a bi-strategy based optimization algorithm (BSOA) which reoptimizes the route plan every time a new customer appears. The authors adapted static instances from literature to compare the proposed solution algorithm with an ant colony optimization (ACO) algorithm and an exact method. The result experiments showed that both BSOA and ACO were able to find optimal solutions for most of the instances. Nonetheless, BSOA required less computational time than the exact method and ACO. 
+The second class is the SEVRP. In contrast to the assumptions of the classical EVRP, in the real world one or more of the elements of the EVRP are uncertain. The inputs of the EVRP that have been assumed to be stochastic are cutomer presence \citep{Shi2019}, demands \citep{Lu2019}, travel time \citep{Shao2017}, energy consumption \citep{Pelletier2019}, and charging station availability \citep{Sweda2017}. Because of the importance of the time frame in the decision-making process, the SEVRP can be examined from two perspectives: static or dynamic. From a static perspective, the goal is to calculate a robust a-priori solution that undergoes minor changes during its execution to manage the fluctuations in the uncertain inputs. From a dynamic perspective, the aim is to design a route plan in an online way reporting to every vehicle what to do next. For this reason, the SEVRP can be classified either as static and stochastic EVRP (SSEVRP) or dynamic and stochastic EVRP (DSEVRP). In the SSEVRP, decisions are made at the planning phase and define actions which are implement at the execution phase, whereas in the  DSEVRP decisions are made as soon as a new event occurs. In the latter, route plans are reoptimized at predefined stages with respect to both the current condition of the system and the available stochastic information. To the best of our knowlegde only \cite{Bi2019} and \cite{Lu2019} have investigated the stochastic EVRP from a dynamic perspective. \cite{Bi2019} considered the dynamic electric vehicle routing problem with battery charging and discharging and stochastic travel time and stochastic demands. The authors considered a single EV and designed a markov decision process (MDP) model which incorporates an analytical battery model to better capture the discharging and charging pattern of the EVs. To solve this model, a hybrid rollout algorithm (HRA) which combines a pre-planning strategy and a rollout algorithm was developed. They used data of a logistics company in Singapore and the charging network of the country to generate several intances of the DSEVRP. The historical traffic data necessary in the   pre-planning strategy was collect via Google Map Distance Matrix API. While the performance of the HRA was compared with that of an hybrid policy iteration (HPI) and hybrid base heuristic (HBH), the performance of the analytical battery model was compared to a linear approximation (LP) model. HRA calculated solutions that were little worse than HPI and HBH solutions in all small instances but it outperformed than in large instances. The simulation results also indicated that the analytical model outperformed the LP model. \cite{Lu2019} approached the dynamic capacitated electric vehicle routing problem (DCEVRP) with stochastic customers and stochastic demands by transforming the problem into a series of static problems. For solving the series of static problems, they introduced a bi-strategy based optimization algorithm (BSOA) which reoptimizes the route plan every time a new customer appears. The authors adapted static instances from literature to compare the proposed solution algorithm with an ant colony optimization (ACO) algorithm and an exact method. The result experiments showed that both BSOA and ACO were able to find optimal solutions for most of the instances. Nonetheless, BSOA required less computational time than the exact method and ACO. 
 
 
 
@@ -378,18 +390,6 @@ The true values of both the waiting time $w_i$ and the charging time $s_i$ are d
 
 The pool $P^t$ is updated by removing the route plans that are incompatible with the current system status. For instance, if route plan $\tilde{z}^t$ specifies that EV type $k$ must proceed to customer $j$ after visiting customer $i$, but the event \textbf{electric vehicle arrival at customer} $i$ shows that the remaining battery level is not enough to reach customer $j$, all solutions in $P^t$ that determine the arrival at $j$ after $i$ are deleted from the pool. Since the solution approach always keeps $\beta$ solutions in the pool at each time $t$, the same amount of deleted solutions must be created. For updating the pool, first the sample sets and then the set of scenarios $\Theta^t$ must be updated, i.e. the solution approach return to \textbf{Stage 1}. It is important to mention that the stochastic inputs that have been disclosed before $t$ do not need to be sampled again in \textbf{Stage 1} at time $t$. 
 
-%\begin{framed}
-	%\begin{longtable}{p{0.12\textwidth} p{0.8\textwidth}}
-%	\underline{\textit{Initialization.}} & Define a set of neighbourhood structures $N_k$ for $k = 1, \cdots, k_{max}$ and the shaking operators. Initialise the maximum number of iterations $iterMax = 1000$. Generate an initial solution $y_{g}$ via greedy algorithm, and set $y_{best} \gets y_{g}$. \\
-%	\underline{\textit{Repeat}} & until $iterMax = 1000$ \\
-	% $k \gets 1$. &\\
-%	 \underline{\textit{Repeat}} & until $k = k_{max}$.\\
-	 	%^  (a) \underline{\textit{Shaking.}} & Random select one of the shaking operators, and based on it generate a solution $y^a$ at random from the $k^{th}$ neighbourhood of $y$. \\
-	%	 (b) \underline{\textit{Repeat}} & until $l = l_{max}$.\\
-%		 & \underline{\textit{Local search by VND.}} Find the best solution $y^b$ in $N_{l}(y)$. If solution %$y^b$ is better than $y^a$, then $y^a \gets y^b$ and $l = l + 1$. Otherwise, $l = l + 1$. \\
-%	 	 (c) \underline{\textit{Move or not.}} & If the solution $y^a$ is better than $y_{best}$, then $y_{best} %\gets y^a$ and continue at Step 2(a). Otherwise, go to Step 1.\\
-%	\end{longtable}
-%\end{framed}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -432,10 +432,15 @@ charge to 0.75 (75\%) every time an EV stops at a CS
 charge to 0.50 (50\%) every time an EV stops at a CS
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scenarios based on charging station availability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 For the representation of the charging station availability, we create three scenarios. In \textit{Scenario A.1}, the CS are always available and have long waiting times. The waiting times (hours) are assumed to be uniformed distributed $w_i \sim U[1,50;2,50]$. In \textit{Scenario A.2}, the CS are available half of the time and have $w_i \sim U[1,00;1,50]$. In \textit{Scenario A.3}, the charging stations are less likely to be available but have shorter waiting times ($w_i \sim U[1,50;2,50]$).
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scenarios based on initial setup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 INITIAL BATTERY ENERGY LEVEL  ($t = 0$)
 all values in the samples in the set of battery energy level are equal to 1 in the \textit{Scenario B.1}
 In \textit{Scenario B.2}, for initializing the set of battery energy level samples, we randomly generate the values in [0.5;1] for each electric vehicle in the fleet, i.e. $y^k_0 \sim U[0.5;1]$ $\forall k \in K$ 
@@ -454,13 +459,6 @@ Two types of scenarios. In the first scenario (\textit{Scenario B.1}), the vehic
 \label{section:conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Acknowledgements}
-\label{section:Acknowledgements}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Conflict of Interest}
 \label{section:Conflict}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -471,11 +469,10 @@ The authors declare that there is no conflict of interest regarding the publicat
 % BIBLIOGRAPHY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliographystyle{agsm}
+\bibliographystyle{plainnat}
 \bibliography{References}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

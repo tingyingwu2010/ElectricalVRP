@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  6 APR 2020 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  7 APR 2020 16:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1376,7 +1376,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 164.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3]
-<Figure1.pdf, id=153, 1357.23064pt x 625.97867pt>
+<Figure1.pdf, id=154, 1357.23064pt x 625.97867pt>
 File: Figure1.pdf Graphic file (type pdf)
  <use Figure1.pdf>
 Package pdftex.def Info: Figure1.pdf used on input line 168.
@@ -1388,7 +1388,7 @@ Overfull \hbox (8.14526pt too wide) in paragraph at lines 239--239
 [] 
  []
 
-[5] <Figure2.pdf, id=264, 748.35585pt x 694.27379pt>
+[5] <Figure2.pdf, id=265, 748.35585pt x 694.27379pt>
 File: Figure2.pdf Graphic file (type pdf)
  <use Figure2.pdf>
 Package pdftex.def Info: Figure2.pdf used on input line 252.
@@ -1412,17 +1412,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `ExtendedPaper.out' has not changed.
 (rerunfilecheck)             Checksum: B7A6B464EB402122742FD3CEA36A25BA;1312.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
  ) 
 Here is how much of TeX's memory you used:
- 34544 strings out of 493089
- 727156 string characters out of 6134842
- 819747 words of memory out of 5000000
- 37367 multiletter control sequences out of 15000+600000
+ 34545 strings out of 493089
+ 727174 string characters out of 6134842
+ 819708 words of memory out of 5000000
+ 37368 multiletter control sequences out of 15000+600000
  48803 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,92p,10365b,1005s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1443,10 +1439,10 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ExtendedPaper.pdf (13 pages, 728324 bytes).
+Output written on ExtendedPaper.pdf (13 pages, 729564 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 429 compressed objects within 5 object streams
+ 514 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
  123 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

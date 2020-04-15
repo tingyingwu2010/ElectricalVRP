@@ -5,37 +5,37 @@ The style file: apa-good3.bst
 Database file #1: References.bib
 You've used 18 entries,
             2887 wiz_defined-function locations,
-            719 strings with 8119 characters,
+            718 strings with 8207 characters,
 and the built_in function-call counts, 12161 in all, are:
-= -- 992
-> -- 627
+= -- 989
+> -- 633
 < -- 4
-+ -- 243
-- -- 207
-* -- 1000
-:= -- 1963
++ -- 247
+- -- 211
+* -- 995
+:= -- 1974
 add.period$ -- 57
 call.type$ -- 18
-change.case$ -- 154
+change.case$ -- 156
 chr.to.int$ -- 18
 cite$ -- 18
-duplicate$ -- 776
-empty$ -- 821
-format.name$ -- 256
-if$ -- 2320
+duplicate$ -- 778
+empty$ -- 816
+format.name$ -- 260
+if$ -- 2316
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 162
+missing$ -- 164
 newline$ -- 98
 num.names$ -- 74
-pop$ -- 331
+pop$ -- 330
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 130
 quote$ -- 0
-skip$ -- 305
+skip$ -- 303
 stack$ -- 0
-substring$ -- 616
-swap$ -- 454
+substring$ -- 601
+swap$ -- 452
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0

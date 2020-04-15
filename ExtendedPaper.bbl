@@ -41,12 +41,18 @@ Hiermann, G., Puchinger, J., Ropke, S., and Hartl, R.~F. 2016.
 \newblock {\em European Journal of Operational Research\/}, {\em 252\/}(3),
   995--1018.
 
-\bibitem[{Liu and Shen(1999)}]{Liu1999}
-Liu, F.~H., and Shen, S.~Y. 1999.
-\newblock ``The fleet size and mix vehicle routing problem with time
-  windows,''.
-\newblock {\em Journal of the Operational Research Society\/}, {\em 50\/}(7),
-  721--732.
+\bibitem[{Jie et~al.(2019)Jie, Yang, Zhang, and Huang}]{Jie2019}
+Jie, W., Yang, J., Zhang, M., and Huang, Y. 2019.
+\newblock ``The two-echelon capacitated electric vehicle routing problem with
+  battery swapping stations: Formulation and efficient methodology,''.
+\newblock {\em European Journal of Operational Research\/}, {\em 272\/},
+  879--904.
+
+\bibitem[{Kopfer and Vornhusen(2019)}]{Kopfer2019}
+Kopfer, H., and Vornhusen, B. 2019.
+\newblock ``Energy vehicle routing problem for differently sized and powered
+  vehicles,''.
+\newblock {\em Journal of Business Economics\/}, {\em 89\/}, 793--821.
 
 \bibitem[{Lu and Wang(2019)}]{Lu2019}
 Lu, J., and Wang, L. 2019.
@@ -90,12 +96,12 @@ Penna, P. H.~V., Afsar, H.~M., Prins, C., and Prodhon, C. 2016.
   stations,''.
 \newblock {\em IFAC-PapersOnLine\/}, {\em 49\/}(12), 955--960.
 
-\bibitem[{Schneider, Stenger, and Goeke(2014)}]{Schneider2014}
-Schneider, M., Stenger, A., and Goeke, D. 2014.
-\newblock ``The electric vehicle-routing problem with time windows and
-  recharging stations,''.
-\newblock {\em Transportation Research Part B: Methodological\/}, {\em 48\/},
-  465--694.
+\bibitem[{Reyes-Rubiano et~al.(2019)Reyes-Rubiano, Ferone, Juan, and
+  Faulin}]{Reyes2019}
+Reyes-Rubiano, L., Ferone, D., Juan, A.~A., and Faulin, J. 2019.
+\newblock ``A simheuristic for routing electric vehicles with limited driving
+  ranges and stochastic travel times,''.
+\newblock {\em SORT\/}, {\em 43\/}(1), 3--24.
 
 \bibitem[{Shao et~al.(2017)Shao, Guan, Ran, He, and Bi}]{Shao2017}
 Shao, S., Guan, W., Ran, B., He, Z., and Bi, J. 2017.
@@ -115,11 +121,6 @@ Solomon, M. 1987.
 \newblock ``Algorithms for the vehicle routing and scheduling problems with
   time windows,''.
 \newblock {\em Operations Research\/}, {\em 35\/}(2), 254--65.
-
-\bibitem[{Sweda, Dolinskaya, and Klabjan(2017)}]{Sweda2017}
-Sweda, T.~M., Dolinskaya, I.~S., and Klabjan, D. 2017.
-\newblock ``Adaptive routing and recharging policies for electric vehicles,''.
-\newblock {\em Transportation Science\/}, {\em 51\/}(4), 1031--1386.
 
 \bibitem[{Taillard et~al.(1997)Taillard, Badeau, Gendreau, Guertin, and
   Potvin}]{Taillard1997}

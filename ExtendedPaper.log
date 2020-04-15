@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  7 APR 2020 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  9 APR 2020 19:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1327,97 +1327,100 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 134.
+[1
 
-Overfull \hbox (12.57973pt too wide) in paragraph at lines 146--147
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (12.57973pt too wide) in paragraph at lines 159--160
 []\T1/ptm/m/n/10.95 In this pa-per, we in-tro-duce a model for the dy-namic het
 -ero-ge-neous elec-tric ve-hi-cle rout-ing prob-lem (DHEVRP)
  []
 
-[1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 164.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 174.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 164.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 174.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 164
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 174
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 164
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 174
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 164.
+(Font)              <10.95> on input line 174.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 164.
+(Font)              <8> on input line 174.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 164.
-LaTeX Font Info:    Try loading font information for U+msa on input line 164.
+(Font)              <6> on input line 174.
+LaTeX Font Info:    Try loading font information for U+msa on input line 174.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 164.
+LaTeX Font Info:    Try loading font information for U+msb on input line 174.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3]
-<Figure1.pdf, id=154, 1357.23064pt x 625.97867pt>
+<Figure1.pdf, id=163, 1357.23064pt x 625.97867pt>
 File: Figure1.pdf Graphic file (type pdf)
  <use Figure1.pdf>
-Package pdftex.def Info: Figure1.pdf used on input line 168.
+Package pdftex.def Info: Figure1.pdf used on input line 178.
 (pdftex.def)             Requested size: 483.69687pt x 223.08841pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 181.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 191.
  [4 <./Figure1.pdf>]
-Overfull \hbox (8.14526pt too wide) in paragraph at lines 239--239
+Overfull \hbox (8.14526pt too wide) in paragraph at lines 249--249
 [] 
  []
 
-[5] <Figure2.pdf, id=265, 748.35585pt x 694.27379pt>
+[5] <Figure2.pdf, id=274, 748.35585pt x 694.27379pt>
 File: Figure2.pdf Graphic file (type pdf)
  <use Figure2.pdf>
-Package pdftex.def Info: Figure2.pdf used on input line 252.
+Package pdftex.def Info: Figure2.pdf used on input line 262.
 (pdftex.def)             Requested size: 382.11726pt x 354.49869pt.
  [6]
 [7 <./Figure2.pdf>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 330.
+put line 340.
  [8]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 383.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 393.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [9] [10]
 [11] (./ExtendedPaper.bbl [12]) [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
  (./ExtendedPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
 Package rerunfilecheck Info: File `ExtendedPaper.out' has not changed.
 (rerunfilecheck)             Checksum: B7A6B464EB402122742FD3CEA36A25BA;1312.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
  ) 
 Here is how much of TeX's memory you used:
  34545 strings out of 493089
- 727174 string characters out of 6134842
- 819708 words of memory out of 5000000
+ 727162 string characters out of 6134842
+ 819753 words of memory out of 5000000
  37368 multiletter control sequences out of 15000+600000
  48803 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1439,10 +1442,10 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ExtendedPaper.pdf (13 pages, 729564 bytes).
+Output written on ExtendedPaper.pdf (13 pages, 729128 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
+ 523 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
  123 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

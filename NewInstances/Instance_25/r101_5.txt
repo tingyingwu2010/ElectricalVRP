@@ -1,3 +1,10 @@
+VehicleAvailable
+4
+Type	MaxCap	MaxBat	ChargeRate	Con
+1	1000	36	0.05	0.17
+1	1000	36	0.05	0.17
+2	500	22	0.02	0.25
+2	500	22	0.02	0.25
 StringID	Type	x	y	demand	ReadyTime	DueDate	ServiceTime
 D0	d	35	35	0	0	230	0
 S0	f	35	35	0	0	230	0
@@ -30,3 +37,6 @@ C22	c	45	10	18	97	107	10
 C23	c	55	5	29	68	78	10
 C24	c	65	35	3	153	163	10
 C25	c	65	20	6	172	182	10
+BEST SOLUTION STATIC CASE
+NV	Distance
+8	617.1

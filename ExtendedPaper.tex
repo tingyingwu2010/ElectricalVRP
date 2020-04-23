@@ -395,59 +395,53 @@ The true values of both the waiting time $w_i$ and the charging time $s_i$ are d
 \section{Dataset design}
 \label{section:dataset}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-We evalute the performance of our solution approach in set of instances adapted from the dataset of \cite{Solomon1987}. We also compare our dynamic solution approach with a static solution approach in terms of quality of the solutions and computational time. Our dataset contains 56 instances. The inputs number of nodes $N$, customer locations $C$, demands $d_i$, travel times $t^k_{ij}$, and service times $s_i$ are taken from these instances. For the representation of the uncertain travel times, we assume that the values defined in the Solomon's instances represent the expected values, and we randomly generate the variances. The same procedure is followed for the customer service times. 
+We evaluate the performance of our solution approach in three sets of instances (25, 50 and 100 customers) adapted from the instances of \cite{Solomon1987}. Our dataset is available at \url{https://github.com/marcellabernardo/InstancesDHEVRP}. The number of nodes $N$, customer locations $C$, demands $d_i$, and service times $s_i$ are taken from Solomon's instances. We assume that stochastic travel times follow independent normal probability distributions in which the mean values are equal to the corresponding values in the Solomon's dataset, whereas the variances are randomly generated. For selecting the number of charging stations $|R|$, we adopt $|R| = \floor{0,2 \cdot |N|}$. We locate charging stations at randomly drawn nodes and one additional station at the depot. We adopt that there are two types of EVs and that the number of EV available is one fourth of the number of customers, i.e. $|K| = |C|/4$. The characteristics of these EVs are displayed in Table \ref{table:vehicles}.
 
-\textcolor{red}{CHANGE! For creating the fleet of heterogeneous electric vehicles, we select some of the EVs described in \cite{mobility2013}. Because this report does not present the charging rates of the EVs, we have to generate them. According to \citep{Montoya2017}, for a battery capacity of 22 kWh, the minimum charging time is 0.50 h, i.e. $g^k$ = 0.02. Therefore, we randomly generate the charging rates in $[0.02;0.06]$. The details of the vehicles are displayed in Table \ref{table:vehicles}.
 \begin{table}[H]
 	\begin{center}
-	\begin{tabular}{c c c c c}
+	\begin{tabular}{c c c c c c}
 	\toprule
-	Name & $Q^k$ (kg) &  $Y^k$ (kWh) & $e^k$ (kWh/km) & $g^k$ (h/kWh)\\ \midrule
-	German E-Cars Pantos & 1.000 & 38,60  & 0,25 & 0.05\\
-	Citro\"{e}n Berlingo &500 &23,50 &0,22 & 0.03 \\
-	Mercedes Vito E-CELL & 900 & 36,00& 0,22 & 0.04\\
-	Renault Kangoo Z.E. & 595 & 22,00 & 0,17 & 0.02 \\
-	Renault Kangoo Rapid Maxi Z. E. & 650  & 22,00 & 0,18 & 0.02 \\
-	Smith Electric Newton Edison & 3.500 & 36,00 & 0,30 & 0.04\\
-	Smith Electric Newton Newton & 2.800 & 40,00 & 0,80 & 0.05 \\
-	Aixam Mega Multitruck & 500 & 60,00 & 0,22 & 0.06\\
+	Name & K & $Q^k$ (kg) &  $Y^k$ (kWh) & $e^k$ (kWh/km) & $g^k$ (h/kWh)\\ \midrule
+	& 1 & & & & \\
+	& 2 & & & & \\
 	\bottomrule
 	\end{tabular}
 	\end{center}
 \caption{Specifications of the available electric vehicles}
 \label{table:vehicles}
 \end{table}
-For selecting the number of charging stations $|R|$, we adopt $|R| = \floor{0,1 \cdot |N|}$. We locate charging stations at randomly drawn nodes and one additional station at the depot. For the representation of the charging station availability and consequent waiting times, we create three scenarios. These scenarios are described in \textbf{Section \ref{section:cases}}.}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Cases configuration}
-\label{section:cases}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-\subsection{Scenarios based on charging strategy at construction of initial route plan}
-charge to 1 (100\%) every time an EV stops at a CS
-charge to 0.75 (75\%) every time an EV stops at a CS
-charge to 0.50 (50\%) every time an EV stops at a CS
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Scenarios based on charging station availability}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-For the representation of the charging station availability, we create three scenarios. In \textit{Scenario A.1}, the CS are always available and have long waiting times. The waiting times (hours) are assumed to be uniformed distributed $w_i \sim U[1,50;2,50]$. In \textit{Scenario A.2}, the CS are available half of the time and have $w_i \sim U[1,00;1,50]$. In \textit{Scenario A.3}, the charging stations are less likely to be available but have shorter waiting times ($w_i \sim U[1,50;2,50]$).
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Scenarios based on initial setup}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textcolor{red}{CHANGE! INITIAL BATTERY ENERGY LEVEL  ($t = 0$)
-all values in the samples in the set of battery energy level are equal to 1 in the \textit{Scenario B.1}
-In \textit{Scenario B.2}, for initializing the set of battery energy level samples, we randomly generate the values in [0.5;1] for each electric vehicle in the fleet, i.e. $y^k_0 \sim U[0.5;1]$ $\forall k \in K$ 
-Two types of scenarios. In the first scenario (\textit{Scenario B.1}), the vehicles leave the depots with their batteries fully charged, whereas in the second scenario (\textit{Scenario B.2}), the batteries are not fully charged when the vehicles leave the depot.} 
+Finally, for the representation of the charging station availability and consequent waiting times, we create three scenarios. These scenarios are described as follows.
+\begin{itemize}
+\item Scenario 1: the CS are always available and have long waiting times. The waiting times (hours) are assumed to be uniformed distributed $w_i \sim U[0.50;1.00]$. 
+\item Scenario 2: the CS are available half of the time and have $w_i \sim U[0.25;0.50]$. 
+\item Scenario 3: the charging stations are less likely to be available but have shorter waiting times ($w_i \sim U[0,10;0,25]$).
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computational results}
 \label{section:results}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{red}{We compare our dynamic solution approach with a static solution approach in terms of quality of the solutions and computational time and also with a solver?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Comparison with static approach}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Comparison with solver}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sensitivity analysis on charging strategy (partial versus full recharge)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+check papers and cite them here... say that we want to compare if it is better or not to do partial recharges.
+\begin{itemize}
+	\item charge to 1 (100\%) every time an EV stops at a CS
+	\item charge to 0.75 (75\%) every time an EV stops at a CS
+	\item charge to 0.50 (50\%) every time an EV stops at a CS
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

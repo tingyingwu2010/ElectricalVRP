@@ -5,9 +5,8 @@
 \BOOKMARK [2][-]{subsection.3.2}{Mathematical model}{section.3}% 5
 \BOOKMARK [1][-]{section.4}{Solution approach}{}% 6
 \BOOKMARK [1][-]{section.5}{Dataset design}{}% 7
-\BOOKMARK [1][-]{section.6}{Cases configuration}{}% 8
-\BOOKMARK [2][-]{subsection.6.1}{Scenarios based on charging strategy at construction of initial route plan}{section.6}% 9
-\BOOKMARK [2][-]{subsection.6.2}{Scenarios based on charging station availability}{section.6}% 10
-\BOOKMARK [2][-]{subsection.6.3}{Scenarios based on initial setup}{section.6}% 11
-\BOOKMARK [1][-]{section.7}{Computational results}{}% 12
-\BOOKMARK [1][-]{section.8}{Conclusions}{}% 13
+\BOOKMARK [1][-]{section.6}{Computational results}{}% 8
+\BOOKMARK [2][-]{subsection.6.1}{Comparison with static approach}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.2}{Comparison with solver}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.3}{Sensitivity analysis on charging strategy \(partial versus full recharge\)}{section.6}% 11
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 12
